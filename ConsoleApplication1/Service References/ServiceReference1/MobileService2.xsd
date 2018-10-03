@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/InfoTrakMobileService.DataAccess.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/InfoTrakMobileService.DataAccess.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCustomerEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerEntity" nillable="true" type="tns:CustomerEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerEntity" nillable="true" type="tns:ArrayOfCustomerEntity" />
+  <xs:complexType name="CustomerEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
+      <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerEntity" nillable="true" type="tns:CustomerEntity" />
+  <xs:complexType name="ArrayOfJobsiteEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JobsiteEntity" nillable="true" type="tns:JobsiteEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJobsiteEntity" nillable="true" type="tns:ArrayOfJobsiteEntity" />
+  <xs:complexType name="JobsiteEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JobsiteId" type="xs:long" />
+      <xs:element minOccurs="0" name="JobsiteName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JobsiteEntity" nillable="true" type="tns:JobsiteEntity" />
+  <xs:complexType name="ArrayOfModelEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ModelEntity" nillable="true" type="tns:ModelEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModelEntity" nillable="true" type="tns:ArrayOfModelEntity" />
+  <xs:complexType name="ModelEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ModelId" type="xs:long" />
+      <xs:element minOccurs="0" name="ModelName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelEntity" nillable="true" type="tns:ModelEntity" />
+  <xs:complexType name="ArrayOfEquipmentEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentEntity" nillable="true" type="tns:EquipmentEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentEntity" nillable="true" type="tns:ArrayOfEquipmentEntity" />
+  <xs:complexType name="EquipmentEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentCustomer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentFamily" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentId" type="xs:long" />
+      <xs:element minOccurs="0" name="EquipmentImage" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="EquipmentJobsite" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentJobsiteAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="EquipmentLocation" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="EquipmentModel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentModelAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="EquipmentSMU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentSerialNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentUnitNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentEntity" nillable="true" type="tns:EquipmentEntity" />
+  <xs:complexType name="ArrayOfComponentEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ComponentEntity" nillable="true" type="tns:ComponentEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComponentEntity" nillable="true" type="tns:ArrayOfComponentEntity" />
+  <xs:complexType name="ComponentEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ComponentId" type="xs:long" />
+      <xs:element minOccurs="0" name="ComponentIdAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="ComponentImage" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ComponentMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComponentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComponentPosition" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ComponentSide" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComponentType" type="xs:long" />
+      <xs:element minOccurs="0" name="DefaultTool" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentId" type="xs:long" />
+      <xs:element minOccurs="0" name="PartNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ComponentEntity" nillable="true" type="tns:ComponentEntity" />
+  <xs:complexType name="ArrayOfTestPointImageEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TestPointImageEntity" nillable="true" type="tns:TestPointImageEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTestPointImageEntity" nillable="true" type="tns:ArrayOfTestPointImageEntity" />
+  <xs:complexType name="TestPointImageEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompartType" type="xs:long" />
+      <xs:element minOccurs="0" name="TestPointImage" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Tool" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TestPointImageEntity" nillable="true" type="tns:TestPointImageEntity" />
+  <xs:complexType name="ArrayOfLimitsEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LimitsEntity" nillable="true" type="tns:LimitsEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLimitsEntity" nillable="true" type="tns:ArrayOfLimitsEntity" />
+  <xs:complexType name="LimitsEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdjToBase" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CATTool" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompartIdAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="HiInflectionPoint" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HiIntercept1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HiIntercept2" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HiSlope1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HiSlope2" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ITMTool" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Method" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiInflectionPoint" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MiIntercept1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MiIntercept2" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MiSlope1" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MiSlope2" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Slope" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDepthNew" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth100Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth10Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth110Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth120Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth20Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth30Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth40Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth50Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth60Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth70Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth80Percent" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="WearDepth90Percent" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LimitsEntity" nillable="true" type="tns:LimitsEntity" />
+  <xs:complexType name="ArrayOfDealershipLimitEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DealershipLimitEntity" nillable="true" type="tns:DealershipLimitEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealershipLimitEntity" nillable="true" type="tns:ArrayOfDealershipLimitEntity" />
+  <xs:complexType name="DealershipLimitEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ALimit" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BLimit" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CLimit" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealershipLimitEntity" nillable="true" type="tns:DealershipLimitEntity" />
+  <xs:complexType name="UndercarriageInspectionEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Abrasive" type="xs:int" />
+      <xs:element minOccurs="0" name="Details" nillable="true" type="tns:ArrayOfInspectionDetails" />
+      <xs:element minOccurs="0" name="DryJointsLeft" type="xs:int" />
+      <xs:element minOccurs="0" name="DryJointsRight" type="xs:int" />
+      <xs:element minOccurs="0" name="EquipmentIdAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="Examiner" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExtCannonLeft" type="xs:int" />
+      <xs:element minOccurs="0" name="ExtCannonRight" type="xs:int" />
+      <xs:element minOccurs="0" name="Impact" type="xs:int" />
+      <xs:element minOccurs="0" name="InspectionDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InspectorComments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JobsiteComments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Moisture" type="xs:int" />
+      <xs:element minOccurs="0" name="Packing" type="xs:int" />
+      <xs:element minOccurs="0" name="SMU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrackSagLeft" type="xs:int" />
+      <xs:element minOccurs="0" name="TrackSagRight" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UndercarriageInspectionEntity" nillable="true" type="tns:UndercarriageInspectionEntity" />
+  <xs:complexType name="ArrayOfInspectionDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InspectionDetails" nillable="true" type="tns:InspectionDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInspectionDetails" nillable="true" type="tns:ArrayOfInspectionDetails" />
+  <xs:complexType name="InspectionDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttachmentType" type="xs:int" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompartIdAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="FlangeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PercentageWorn" type="xs:int" />
+      <xs:element minOccurs="0" name="Reading" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToolUsed" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrackUnitAuto" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InspectionDetails" nillable="true" type="tns:InspectionDetails" />
+  <xs:complexType name="UserPreferenceEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="UndercarriagUOM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserPreferenceEntity" nillable="true" type="tns:UserPreferenceEntity" />
+  <xs:complexType name="NewEquipmentEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="_creationDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_customer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_customerAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="_details" nillable="true" type="tns:ArrayOfEquipmentDetails" />
+      <xs:element minOccurs="0" name="_equipmentId" type="xs:long" />
+      <xs:element minOccurs="0" name="_equipmentInspection" nillable="true" type="tns:UndercarriageInspectionEntity" />
+      <xs:element minOccurs="0" name="_examiner" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_family" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_image" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="_imageRes" type="xs:int" />
+      <xs:element minOccurs="0" name="_isNew" type="xs:int" />
+      <xs:element minOccurs="0" name="_jobsite" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_jobsiteAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="_location" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="_model" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_modelAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="_serialno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_smu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_unitno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NewEquipmentEntity" nillable="true" type="tns:NewEquipmentEntity" />
+  <xs:complexType name="ArrayOfEquipmentDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentDetails" nillable="true" type="tns:EquipmentDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentDetails" nillable="true" type="tns:ArrayOfEquipmentDetails" />
+  <xs:complexType name="EquipmentDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompType" type="xs:long" />
+      <xs:element minOccurs="0" name="Compart" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompartIdAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="Compartid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentidAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="EqunitAuto" type="xs:long" />
+      <xs:element minOccurs="0" name="FlangeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="InspectionImage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Method" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pos" type="xs:int" />
+      <xs:element minOccurs="0" name="Reading" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Side" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tool" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentDetails" nillable="true" type="tns:EquipmentDetails" />
+  <xs:complexType name="EquipmentInspectionListEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EquipmentsCount" type="xs:int" />
+      <xs:element minOccurs="0" name="EquipmentsInspectionsList" nillable="true" type="tns:ArrayOfUndercarriageInspectionEntity" />
+      <xs:element minOccurs="0" name="NewEquipmentsInspectionsList" nillable="true" type="tns:ArrayOfNewEquipmentEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentInspectionListEntity" nillable="true" type="tns:EquipmentInspectionListEntity" />
+  <xs:complexType name="ArrayOfUndercarriageInspectionEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UndercarriageInspectionEntity" nillable="true" type="tns:UndercarriageInspectionEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUndercarriageInspectionEntity" nillable="true" type="tns:ArrayOfUndercarriageInspectionEntity" />
+  <xs:complexType name="ArrayOfNewEquipmentEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NewEquipmentEntity" nillable="true" type="tns:NewEquipmentEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNewEquipmentEntity" nillable="true" type="tns:ArrayOfNewEquipmentEntity" />
+</xs:schema>

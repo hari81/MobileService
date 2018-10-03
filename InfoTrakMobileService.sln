@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoTrakMobileService", "InfoTrakMobileService\InfoTrakMobileService.csproj", "{F8F2A036-E32B-4B95-AA79-CC30FC8A299D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{636DDEC9-D258-4E69-A0A5-95E5DAEEA516} = {636DDEC9-D258-4E69-A0A5-95E5DAEEA516}
+		{D7100CF1-7598-45F3-8B8E-CF86506B52C3} = {D7100CF1-7598-45F3-8B8E-CF86506B52C3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "..\BLL\BLL.csproj", "{636DDEC9-D258-4E69-A0A5-95E5DAEEA516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\DAL\DAL.csproj", "{D7100CF1-7598-45F3-8B8E-CF86506B52C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8F2A036-E32B-4B95-AA79-CC30FC8A299D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F2A036-E32B-4B95-AA79-CC30FC8A299D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F2A036-E32B-4B95-AA79-CC30FC8A299D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F2A036-E32B-4B95-AA79-CC30FC8A299D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{636DDEC9-D258-4E69-A0A5-95E5DAEEA516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636DDEC9-D258-4E69-A0A5-95E5DAEEA516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636DDEC9-D258-4E69-A0A5-95E5DAEEA516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636DDEC9-D258-4E69-A0A5-95E5DAEEA516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7100CF1-7598-45F3-8B8E-CF86506B52C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7100CF1-7598-45F3-8B8E-CF86506B52C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7100CF1-7598-45F3-8B8E-CF86506B52C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7100CF1-7598-45F3-8B8E-CF86506B52C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MobileService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53781/MobileService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53781/MobileService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53781/MobileService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/InfoTrakMobileService.DataAccess.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMobileService_GetCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetJobsitesByCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobsitesByCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetJobsitesByCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetJobsitesByCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetModelsByJobsite_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelsByJobsite" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetModelsByJobsite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelsByJobsiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetEquipmentByJobsiteAndModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentByJobsiteAndModel" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetEquipmentByJobsiteAndModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentByJobsiteAndModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetSelectedEquipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedEquipment" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetSelectedEquipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedEquipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetSelectedComponents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedComponents" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetSelectedComponents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedComponentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetTestPointImages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTestPointImages" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetTestPointImages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTestPointImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetUCLimits_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUCLimits" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetUCLimits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUCLimitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetDealershipLimits_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealershipLimits" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetDealershipLimits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDealershipLimitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveUcInspection_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUcInspection" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveUcInspection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUcInspectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_AuthenticateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_AuthenticateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetUserPreference_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPreference" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetUserPreference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserPreferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveEquipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEquipment" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveEquipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEquipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveInspectionForNewEquipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInspectionForNewEquipment" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveInspectionForNewEquipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInspectionForNewEquipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetEquipmentIdBySerialAndUnit_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentIdBySerialAndUnit" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_GetEquipmentIdBySerialAndUnit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentIdBySerialAndUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveEquipmentsInspectionsData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEquipmentsInspectionsData" />
+  </wsdl:message>
+  <wsdl:message name="IMobileService_SaveEquipmentsInspectionsData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEquipmentsInspectionsDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMobileService">
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetCustomerList" message="tns:IMobileService_GetCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetCustomerListResponse" message="tns:IMobileService_GetCustomerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetJobsitesByCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetJobsitesByCustomer" message="tns:IMobileService_GetJobsitesByCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetJobsitesByCustomerResponse" message="tns:IMobileService_GetJobsitesByCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelsByJobsite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetModelsByJobsite" message="tns:IMobileService_GetModelsByJobsite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetModelsByJobsiteResponse" message="tns:IMobileService_GetModelsByJobsite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipmentByJobsiteAndModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetEquipmentByJobsiteAndModel" message="tns:IMobileService_GetEquipmentByJobsiteAndModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetEquipmentByJobsiteAndModelResponse" message="tns:IMobileService_GetEquipmentByJobsiteAndModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedEquipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetSelectedEquipment" message="tns:IMobileService_GetSelectedEquipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetSelectedEquipmentResponse" message="tns:IMobileService_GetSelectedEquipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedComponents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetSelectedComponents" message="tns:IMobileService_GetSelectedComponents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetSelectedComponentsResponse" message="tns:IMobileService_GetSelectedComponents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTestPointImages">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetTestPointImages" message="tns:IMobileService_GetTestPointImages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetTestPointImagesResponse" message="tns:IMobileService_GetTestPointImages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUCLimits">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetUCLimits" message="tns:IMobileService_GetUCLimits_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetUCLimitsResponse" message="tns:IMobileService_GetUCLimits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealershipLimits">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetDealershipLimits" message="tns:IMobileService_GetDealershipLimits_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetDealershipLimitsResponse" message="tns:IMobileService_GetDealershipLimits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUcInspection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/SaveUcInspection" message="tns:IMobileService_SaveUcInspection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/SaveUcInspectionResponse" message="tns:IMobileService_SaveUcInspection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/AuthenticateUser" message="tns:IMobileService_AuthenticateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/AuthenticateUserResponse" message="tns:IMobileService_AuthenticateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserPreference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetUserPreference" message="tns:IMobileService_GetUserPreference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetUserPreferenceResponse" message="tns:IMobileService_GetUserPreference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEquipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/SaveEquipment" message="tns:IMobileService_SaveEquipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/SaveEquipmentResponse" message="tns:IMobileService_SaveEquipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInspectionForNewEquipment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/SaveInspectionForNewEquipment" message="tns:IMobileService_SaveInspectionForNewEquipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/SaveInspectionForNewEquipmentResponse" message="tns:IMobileService_SaveInspectionForNewEquipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipmentIdBySerialAndUnit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/GetEquipmentIdBySerialAndUnit" message="tns:IMobileService_GetEquipmentIdBySerialAndUnit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/GetEquipmentIdBySerialAndUnitResponse" message="tns:IMobileService_GetEquipmentIdBySerialAndUnit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEquipmentsInspectionsData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobileService/SaveEquipmentsInspectionsData" message="tns:IMobileService_SaveEquipmentsInspectionsData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobileService/SaveEquipmentsInspectionsDataResponse" message="tns:IMobileService_SaveEquipmentsInspectionsData_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="MobileService" />
+</wsdl:definitions>

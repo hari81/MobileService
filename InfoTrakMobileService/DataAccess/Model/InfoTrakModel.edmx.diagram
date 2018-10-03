@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="00989b7707b745878f0fdf9fd950288b" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="InfoTrakDataModel.CRSF" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.CUSTOMER" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.EQUIPMENT" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_CRSF_CUSTOMER" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.MODEL" Width="1.5" PointX="11" PointY="14" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.LU_MMTA" Width="1.5" PointX="8.0195763222964374" PointY="5.0371625893922349" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_EQUIPMENT_LU_MMTA" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_LU_MMTA_MODEL" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.TYPE" Width="1.5" PointX="3.0221081092125308" PointY="22.492418314559579" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_LU_MMTA_TYPE" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.LINK_LOCATION" Width="1.5" PointX="0.27015740064445759" PointY="21.638123999181261" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_LINK_LOCATION_EQUIPMENT" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.GENERAL_EQ_UNIT" Width="1.5" PointX="3.6347421499130981" PointY="25.882019442451195" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.LU_COMPART" Width="1.5" PointX="10.639776817820863" PointY="6.9245005431233446" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.LU_COMPART_TYPE" Width="1.5" PointX="11.260381159959538" PointY="21.001136297826253" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.LU_SYSTEM" Width="1.5" PointX="1.0213830475795005" PointY="4.5558023622985013" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_GENERAL_EQ_UNIT_LU_COMPART" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_LU_COMPART_LU_COMPART_TYPE" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_LU_COMPART_TYPE_LU_SYSTEM" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.COMPART_ATTACH_FILESTREAM" Width="1.5" PointX="11.25" PointY="26.25" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.COMPART_ATTACH_TYPE" Width="1.5" PointX="1.4137476018693986" PointY="30.626678108529504" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_COMPART_ATTACH_FILESTREAM_COMPART_ATTACH_TYPE" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.TRACK_TOOL" Width="1.5" PointX="0.87720952410120967" PointY="30.859081312482751" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.TRACK_COMPART_EXT" Width="1.5" PointX="5.625" PointY="24.125" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_TRACK_COMPART_EXT_TRACK_COMPART_EXT" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_TRACK_COMPART_EXT_TRACK_TOOL" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.TRACK_COMPART_WORN_CALC_METHOD" Width="1.5" PointX="4.41176373530727" PointY="31.121664374657751" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_TRACK_COMPART_EXT_TRACK_COMPART_WORN_CALC_METHOD" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.USER_TABLE" Width="1.5" PointX="14.375" PointY="21.75" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.TRACK_DEALERSHIP_LIMITS" Width="1.5" PointX="9.8374468301597275" PointY="31.186507179954326" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.Mbl_CompartAttach_filestream" Width="1.5" PointX="5.5221103809411218" PointY="6.6030271233073563" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.Mbl_NewEquipment" Width="1.5" PointX="6.813075232698151" PointY="19.473623210319143" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.Mbl_NewGENERAL_EQ_UNIT" Width="1.5" PointX="8.875" PointY="18.875" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.Mbl_Track_Inspection" Width="1.5" PointX="6.9047492923702816" PointY="6.5795610279680981" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.Mbl_Track_Inspection_Detail" Width="1.5" PointX="4.375" PointY="14.625" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.APPLICATION_LU_CONFIG" Width="1.5" PointX="10.295020842130771" PointY="3.5708456205068368" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.LU_Module_Sub" Width="1.5" PointX="8.1362912115344272" PointY="29.302087544138583" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.GET" Width="1.5" PointX="19.5" PointY="3.375" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_GET_EQUIPMENT" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.GET_IMPLEMENT_MAKE_MODEL" Width="1.5" PointX="30" PointY="4.125" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.LU_IMPLEMENT" Width="1.5" PointX="26.75" PointY="4" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_GET_LU_IMPLEMENT1" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_LU_COMPART_TYPE_LU_IMPLEMENT" />
+        <EntityTypeShape EntityType="InfoTrakDataModel.MAKE" Width="1.5" PointX="4.0397745315170726" PointY="9.620809052894268" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_EQUIPMENT_MAKE" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_LU_MMTA_MAKE" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_TRACK_COMPART_EXT_MAKE" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_dbo_CRSF_dbo_USER_TABLE_CreatedByUserId" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_dbo_LU_IMPLEMENT_dbo_CUSTOMER_CustomerId" />
+        <AssociationConnector Association="InfoTrakDataModel.FK_dbo_LU_Module_Sub_dbo_EQUIPMENT_equipmentid_auto" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
